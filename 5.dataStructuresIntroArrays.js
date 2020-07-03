@@ -7,10 +7,10 @@
 // 3 | 01010101
 // 4 | 01010101
 
-const arr = [1, "new element", 2, 3, 4]; // O(1)
-
+const arr = ['first element', 1, "new element", 2, 3, 4]; // O(1)
+                   0           1     2           3 4   5
 // arr.splice(2, 0, "new element");
 arr.pop(); // O(1)
-arr.unshift("first element");
+arr.unshift("first element"); // O(n)
 
 console.log(arr);
