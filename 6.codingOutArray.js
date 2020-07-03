@@ -41,4 +41,3 @@ const arr = new TestArray();
 arr.push("First Element");
 arr.push("Second element");
 arr.push("Last element");
-console.log(arr.get(1000));
