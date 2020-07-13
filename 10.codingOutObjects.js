@@ -1,7 +1,8 @@
+// Coding out object from scratch
+
 class HashTable {
   constructor(size) {
     this.data = new Array(size);
-    // this.data = [];
   }
 
   _hash(key) {
@@ -13,7 +14,8 @@ class HashTable {
   }
 
   set(key, value) {
-    let address = this._hash(key);
+    const address = this._hash(key);
+
     if (!this.data[address]) {
       this.data[address] = [];
     }
@@ -23,11 +25,12 @@ class HashTable {
 
   get(key) {
     const address = this._hash(key);
-    const currentBucket = this.data[address];
-    if (currentBucket) {
-      for (let i = 0; i < currentBucket.length; i++) {
-        if (currentBucket[i][0] === key) {
-          return currentBucket[i][1];
+    const bucket = this.data[address];
+
+    if (bucket) {
+      for (let i = 0; i < bucket.length; i++) {
+        if (bucket[i][0] === key) {
+          return bucket[i][1];
         }
       }
     }
@@ -35,8 +38,7 @@ class HashTable {
   }
 }
 
-const myHashTable = new HashTable(50);
-myHashTable.set("grapes", 10000);
-myHashTable.get("grapes");
-myHashTable.set("apples", 9);
-myHashTable.get("apples");
+const hash = new HashTable(20);
+hash.set("test", 1);
+hash.set("some other key", "some other value");
+console.log(hash.get("some other key232324jl;j"));
