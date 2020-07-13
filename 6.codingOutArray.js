@@ -41,3 +41,6 @@ const arr = new TestArray();
 arr.push("First Element");
 arr.push("Second element");
 arr.push("Last element");
+
+// Youtube link
+// https://www.youtube.com/watch?v=jV7vxqcHCQk&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=7

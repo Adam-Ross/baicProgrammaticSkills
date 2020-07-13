@@ -14,3 +14,6 @@ function logAll(arr) {
 }
 
 logAll(arr);
+
+// Youtube linke
+// https://www.youtube.com/watch?v=GncFdx6UFoY&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=4

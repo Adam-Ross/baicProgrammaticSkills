@@ -14,3 +14,6 @@ arr.pop(); // O(1)
 arr.unshift("first element"); // O(n)
 
 console.log(arr);
+
+// youtube link
+//https://www.youtube.com/watch?v=JktmexZkqWM&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=6

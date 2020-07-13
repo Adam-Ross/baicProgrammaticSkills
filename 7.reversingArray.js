@@ -35,3 +35,6 @@ function reverse(str) {
 const str = "12345";
 
 console.log(reverse(str));
+
+// Youtube link
+// https://www.youtube.com/watch?v=RYv2fz4a06M&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=8

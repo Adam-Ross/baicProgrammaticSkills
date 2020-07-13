@@ -23,3 +23,6 @@ function test2(arr) {
 
 const arr = [1, 2, 3, 4, 5];
 console.log(test2(arr));
+
+// Youtube link
+// https://www.youtube.com/watch?v=SHIg5UIfBnI&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=5

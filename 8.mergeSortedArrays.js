@@ -30,3 +30,6 @@ function mergeSorted(arr1, arr2) {
 const arr1 = [1, 3, 5, 7, 9, 22, 33, 44, 55];
 const arr2 = [2, 555];
 console.log(mergeSorted(arr1, arr2));
+
+// YOutube link
+// https://www.youtube.com/watch?v=lh1NHPUUTCk&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=9

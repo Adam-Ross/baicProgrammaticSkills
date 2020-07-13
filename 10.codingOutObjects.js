@@ -42,3 +42,6 @@ const hash = new HashTable(20);
 hash.set("test", 1);
 hash.set("some other key", "some other value");
 console.log(hash.get("some other key232324jl;j"));
+
+// Youtube link
+// https://www.youtube.com/watch?v=ZIRxk4tAbkA&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=12
