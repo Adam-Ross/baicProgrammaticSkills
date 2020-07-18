@@ -1,3 +1,4 @@
+// Node class
 class Node {
   constructor(data) {
     this.data = data;
@@ -12,8 +13,9 @@ class LinkedList {
     this.tail = null;
   }
 
-  add(data) {
+  prepend(data) {
     const node = new Node(data);
+
     if (!this.head) {
       this.head = node;
       this.tail = node;
@@ -23,21 +25,12 @@ class LinkedList {
       this.head = node;
       this.length++;
     }
-  }
-
-  delete(index) {
-    if (!this.head) {
-      return -1;
-    }
-
-    if (index > this.length) {
-      return "Out of bounds";
-    }
+    return this;
   }
 }
 
 const list = new LinkedList();
-list.add("test");
-list.add("new head");
-list.add("last head");
+list.prepend("First node");
+list.prepend("new head");
+list.prepend("Final new head");
 console.log(list);
