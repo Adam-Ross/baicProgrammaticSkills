@@ -56,12 +56,41 @@ class LinkedList {
     }
     return this;
   }
+
+  insert(index, data) {
+    if (index < 0 || index > this.length) {
+      return -1;
+    } else if (index === 0) {
+      this.prepend(data);
+    } else if (data === this.length) {
+      this.append(data);
+    } else {
+      const newNode = new Node(data);
+      let current = this.head;
+      let counter = 0;
+
+      while (counter < index - 1) {
+        counter++;
+        current = current.next;
+      }
+      let temp = current.next;
+      current.next = newNode;
+      newNode.next = temp;
+      this.length++;
+    }
+    return this;
+  }
 }
 
 const list = new LinkedList();
-list.prepend("First node");
-list.prepend("new head");
-list.prepend("Final new head");
-list.append("New test tail");
-list.append("final test tail");
+list.append(list.length);
+list.append(list.length);
+list.append(list.length);
+list.append(list.length);
+list.append(list.length);
+list.append(list.length);
+list.append(list.length);
+list.append(list.length);
+list.insert(5, "This will be inserted at index 5");
+
 console.log(list.print());
