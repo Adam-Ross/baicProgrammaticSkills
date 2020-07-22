@@ -117,6 +117,27 @@ class LinkedList {
       this.length--;
     }
   }
+
+  reverse() {
+    if (!this.head) return -1;
+    // Flip the head and tail
+    let node = this.head;
+    this.head = this.tail;
+    this.tail = node;
+
+    // Make a few vars
+    let prev = null;
+    let next;
+
+    for (let i = 0; i < this.length; i++) {
+      next = node.next;
+      node.next = prev;
+      prev = node;
+      node = next;
+    }
+
+    return this;
+  }
 }
 
 const list = new LinkedList();
@@ -128,9 +149,9 @@ list.append(list.length);
 list.append(list.length);
 list.append(list.length);
 list.append(list.length);
-list.insert(5, "This is going to be at index 5");
+
 console.log(list.print());
 console.log(list.getProps());
-list.delete(5);
+list.reverse();
 console.log(list.print());
 console.log(list.getProps());
