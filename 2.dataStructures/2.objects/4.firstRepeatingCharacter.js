@@ -48,6 +48,7 @@ function usingArrays(arr) {
   return -1;
 }
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const arr = [1, 5, 2, 4, 5, 7, 1];
 
-console.log(usingArrays(arr));
+console.log(usingObjects(arr));
+console.log(bruteForce(arr));
