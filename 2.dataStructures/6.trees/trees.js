@@ -89,24 +89,21 @@ class BST {
       return this.root.data;
     } else {
       let current = this.root;
-      while (true) {
-        if (id === current.data.id) {
-          return current.data;
-        }
-
+      while (current) {
         if (id < current.data.id) {
-          // Move left
           if (!current.left) {
-            return "Not found";
+            return -1;
           } else {
             current = current.left;
           }
-        } else {
+        } else if (id > current.data.id) {
           if (!current.right) {
-            return "Not found";
+            return -1;
           } else {
             current = current.right;
           }
+        } else {
+          return current.data;
         }
       }
     }
@@ -114,24 +111,28 @@ class BST {
 }
 
 const data = {
-  name: "Mike",
+  name: "John",
   age: "24",
+  position: "Software Engineer",
   id: 20,
 };
 
 const data2 = {
-  name: "Mike",
+  name: "Steve",
   age: "34",
+  position: "Software Engineer",
   id: 10,
 };
 
 const data3 = {
-  name: "Mike",
+  name: "Kate",
   age: "34",
+  position: "CTO",
   id: 5,
 };
 const bst = new BST();
 bst.insert(data);
 bst.insert(data2);
 bst.insert(data3);
-console.log(bst.lookup(20));
+// console.log(bst);
+console.log(bst.lookup(345));
